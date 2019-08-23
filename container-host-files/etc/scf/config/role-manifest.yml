@@ -211,6 +211,17 @@ instance_groups:
         - name: webhook
           protocol: TCP
           internal: 2999
+  - name: eirini-ssh-proxy
+    release: eirini
+    properties:
+      bosh_containerization:
+        run:
+          scaling:
+            min: 1
+            max: 1
+            ha: 1
+          memory: 256
+          virtual-cpus: 2
   - name: eirini-loggregator-bridge
     release: eirini
     properties:
