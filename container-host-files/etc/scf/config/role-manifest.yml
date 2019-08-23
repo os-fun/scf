@@ -2971,7 +2971,7 @@ configuration:
     properties.eirini-persi.namespace: "((EIRINI_KUBE_NAMESPACE))"
     properties.eirini-persi.operator_webhook_host: "((EIRINI_EIRINI_PERSI_SERVICE_HOST))"
     properties.eirini-ssh-proxy.api_url: "api.((KUBERNETES_NAMESPACE)).svc.((KUBERNETES_CLUSTER_DOMAIN))"
-    properties.eirini-ssh-proxy.port: 2222
+    properties.eirini-ssh-proxy.port: "2222"
     properties.eirini.cert_copier_image: "((EIRINI_CERT_COPIER_IMAGE))"
     properties.external_cert: '"((LOG_CACHE_CF_AUTH_PROXY_EXTERNAL_CERT))"'
     properties.external_key: '"((LOG_CACHE_CF_AUTH_PROXY_EXTERNAL_CERT_KEY))"'
