@@ -3812,7 +3812,6 @@ variables:
   options:
     default: '2222'
     description: "The port of the ssh proxy for Eirini"
-    imagename: true
 - name: EIRINI_UPLOADER_IMAGE
   options:
     default: 'eirini/recipe-uploader:0.2.0'
