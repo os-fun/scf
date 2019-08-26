@@ -148,9 +148,9 @@ releases:
   url: "https://bosh.io/d/github.com/cloudfoundry-incubator/bits-service-release?v=2.28.0"
   sha1: "bd173fc9952277ea962a330c04555d9bd1e8a10e"
 - name: "eirini"
-  url: "https://tmp-aljfkdjadk-eirinifs-bucket.s3.eu-central-1.amazonaws.com/eirini-dev-af6fc4d.tgz"
+  url: "https://tmp-aljfkdjadk-eirinifs-bucket.s3.eu-central-1.amazonaws.com/eirini-dev-6eee854.tgz"
   version: "0.0.19"
-  sha1: "fae3a29d72f00b55fda7619b13cd7e5bbef1b41e"
+  sha1: "25483966a2da5d23068bffe7eb1d0774ddd87814"
 - name: uaa
   version: '72.0'
   url: https://bosh.io/d/github.com/cloudfoundry/uaa-release?v=72.0
@@ -2971,6 +2971,7 @@ configuration:
     properties.eirini-persi.namespace: "((EIRINI_KUBE_NAMESPACE))"
     properties.eirini-persi.operator_webhook_host: "((EIRINI_EIRINI_PERSI_SERVICE_HOST))"
     properties.eirini-ssh-proxy.api_url: "api.((KUBERNETES_NAMESPACE)).svc.((KUBERNETES_CLUSTER_DOMAIN))"
+    properties.eirini-ssh-proxy.host_key: '"((APP_SSH_KEY))"'
     properties.eirini-ssh-proxy.port: "((EIRINI_SSH_PORT))"
     properties.eirini.cert_copier_image: "((EIRINI_CERT_COPIER_IMAGE))"
     properties.external_cert: '"((LOG_CACHE_CF_AUTH_PROXY_EXTERNAL_CERT))"'
