@@ -222,6 +222,11 @@ instance_groups:
             ha: 1
           memory: 256
           virtual-cpus: 2
+        ports:
+        - name: eirini-ssh
+          protocol: TCP
+          internal: 2222
+          public: true
   - name: eirini-loggregator-bridge
     release: eirini
     properties:
